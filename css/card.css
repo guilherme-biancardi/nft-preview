@@ -1,0 +1,66 @@
+.card-text{
+    margin-top: 8px;
+    row-gap: 14px;
+    flex-direction: column;
+}
+
+.card-text > h1{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.card-text p{
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.card-information{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between !important;
+    margin-top: 8px;
+}
+
+.card-information li{
+    column-gap: 6px;
+    align-items: center;
+}
+
+.card-information li > p{
+    font-size: 0.9em;
+}
+
+.card-information li:first-child{
+    color: var(--cyan);
+}
+
+.card-information li:last-child{
+    color: var(--soft-blue);
+}
+
+.nft-author{
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start !important;
+    column-gap: 12px;
+}
+
+.nft-author img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 1px solid var(--white);
+}
+
+.nft-author p{
+    font-size: 0.9em;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.nft-author p > span{
+    color: var(--white);
+    font-weight: 400;
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url('card.css');
+@import url('card-image.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+    --soft-blue: hsl(215, 51%, 73%);
+    --cyan: hsl(178, 100%, 50%);
+    --cyan-op: hsla(178, 100%, 50%, 0.4);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: #f0f0f0;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.inside{
+    position: relative;
+}
+
+body{
+    flex-direction: column;
+    row-gap: 32px;
+    align-items: center;
+    font-size: 1em;
+    height: 100vh;
+    background-color: var(--main-bg);
+    color: var(--white);
+}
+
+section{
+    padding: 16px;
+    border-radius: 16px;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-bg);
+    row-gap: 20px;
+    box-shadow: 1px 2px 80px hsla(215, 52%, 9%, 0.5);
+}
+
+hr{
+    width: 100%;
+    border: 1px solid var(--line);
+}
+
+.cyan-hover{
+    cursor: pointer;
+    transition: all .15s ease;
+}
+
+.cyan-hover:hover{
+    color: var(--cyan);
+}
